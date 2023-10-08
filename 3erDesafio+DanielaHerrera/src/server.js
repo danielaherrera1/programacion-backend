@@ -76,9 +76,9 @@ app.post("/carts", async (req,res) => {
   return res.send("Carrito creado");
 });
 
-const PORT = 8080;
-const server = app.listen(PORT, () => {
-    console.log(`Express por Local Host ${server.address().port}`)
-})
+// const PORT = 8080;
+// const server = app.listen(PORT, () => {
+    // console.log(`Express por Local Host ${server.address().port}`)
+// })
 
-server.on("Error", (error) => console.log(`Error del servidor ${error}`))
+// server.on("Error", (error) => console.log(`Error del servidor ${error}`))

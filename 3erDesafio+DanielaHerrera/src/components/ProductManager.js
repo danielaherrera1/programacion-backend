@@ -27,6 +27,7 @@ export default class ProductManager{
         };
         productsFetch.push(newProduct);
         await fs.writeFile(this.patch,JSON.stringify(productsFetch));
+        return productsFetch
     };
 
     readProduct = async () => {
